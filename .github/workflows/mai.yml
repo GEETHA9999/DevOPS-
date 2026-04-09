@@ -1,0 +1,14 @@
+name: myfirstpipeline11
+
+on:
+  workflow_dispatch:
+
+jobs:
+  clone-repo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone public repo via HTTPS
+        uses: actions/checkout@v4
+        with:
+          repository: GEETHA9999/DevOPS-
+          ref: main
