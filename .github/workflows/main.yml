@@ -1,16 +1,15 @@
-name: my first pipeline
+name: myfirs pipeline
 
 on:
   workflow_dispatch: 
 
 jobs:
-  clone-repo:
+  clone-repo-job
     runs-on: ubuntu-latest
     steps:
       - name: Clone private repo via HTTPS
-        uses: actions/checkout@v4
+        uses: actions/checkout@vmain
         with:
           repository: GEETHA9999/DevOPS-
           ref: main
-          token: ${{ secrets.GH_PAT }}
           path: 'external-repo'
