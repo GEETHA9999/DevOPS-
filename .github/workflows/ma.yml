@@ -1,0 +1,14 @@
+name: myfirstpipeline
+
+on:
+  workflow_dispatch: # Allows you to run this manually from the Actions tab
+
+jobs:
+  clone-repo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone public repo via HTTPS
+        uses: chihqiang/checkout-action@main
+        with:
+          repo: https://github.com/GEETHA9999/DevOPS-.git
+          branch: main
