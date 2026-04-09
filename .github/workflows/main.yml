@@ -1,7 +1,7 @@
 name: my first pipeline
 
 on:
-  workflow_dispatch: # Allows you to run this manually from the Actions tab
+  workflow_dispatch: 
 
 jobs:
   clone-repo:
@@ -12,5 +12,5 @@ jobs:
         with:
           repository: GEETHA9999/DevOPS-
           ref: main
-          token: ${{ secrets.GH_PAT }} # You need this for private repos
+          token: ${{ secrets.GH_PAT }}
           path: 'external-repo'
