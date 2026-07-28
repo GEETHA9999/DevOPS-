@@ -4,7 +4,7 @@ on:
   workflow_dispatch: 
 
 jobs:
-  clone-repo-job
+  clone-repo-job:
     runs-on: ubuntu-latest
     steps:
       - name: Clone private repo via HTTPS
