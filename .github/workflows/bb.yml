@@ -1,3 +1,4 @@
+git ls-remote --heads https://github.com/<GEETHA9999>/<DevOPS->.git
 name: myfirstpipeline
 
 on:
@@ -11,6 +12,9 @@ jobs:
         uses: GuillaumeFalourd/clone-github-repo-action@v2.3
         with:
           depth: 1
-          branch: 'main'
+          branch: 'master'
           owner: 'GEETHA9999'
           repository: 'DevOPS-'
+          git branch -M master
+           git push -u origin master
+           Cloning into 'DevOPS-'...
