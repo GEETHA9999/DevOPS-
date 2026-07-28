@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  clone-repo:
+  clone-repo-job:
     runs-on: ubuntu-latest
     steps:
       - name: Clone GuillaumeFalourd/poc-github-actions PUBLIC repository
